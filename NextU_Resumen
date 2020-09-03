@@ -22,3 +22,17 @@
 
     SELECT * FROM [tabla_izquierda] RIGHT JOIN [tabla_derecha] 
     ON [condición que une las tablas]
+    
+    --------
+    
+    
+        Triggers:
+
+    CREATE TRIGGER [nombre_trigger] [AFTER|BEFORE] 
+    [UPDATE|INSERT|DELETE] ON [nombre_tabla]
+    FOR EACH ROW BEGIN …[cuerpo trigger]END
+
+    Procedures:
+
+    CREATE PROCEDURE [nombre_procedure] (parametros) 
+    BEGIN …[cuerpo procedure]END
