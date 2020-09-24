@@ -36,3 +36,14 @@
 
     CREATE PROCEDURE [nombre_procedure] (parametros) 
     BEGIN …[cuerpo procedure]END
+    
+  DUMP
+  
+  Respaldo
+  ```
+  mysqldump -u [usuario] -p [base_de_datos] > [archivo.sql]
+  ```
+  Recuperando
+  ```
+   mysql -u [usuario] -p [base_de_datos_destino] < [archivo.sql]
+```
