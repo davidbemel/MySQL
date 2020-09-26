@@ -65,3 +65,14 @@ Claves Foráneas:
 ```
     mysql> KILL [conection_id];
 ```
+# Export/import
+
+Importando:
+```
+mysql> LOAD DATA INFILE '[archivo_csv]' INTO TABLE [tabla];
+```
+Exportantdo
+```
+mysql>     SELECT * INTO OUTFILE '[archivo_csv]'    FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'    LINES TERMINATED BY '\n'    FROM [tabla];
+```
+
